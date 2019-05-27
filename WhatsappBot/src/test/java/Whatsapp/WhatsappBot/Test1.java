@@ -26,7 +26,7 @@ public void setup() {
 @Test
 public void Spam() throws InterruptedException {
 	
-	web.spamMessageTo("Gayatiri Jio", "Botted Spam message from selenium!");
+	web.spamMessageTo(prop.getProperty("target"), prop.getProperty("message"));
 }
 
 @AfterMethod

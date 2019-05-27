@@ -33,9 +33,10 @@ public class Web extends Base{
 		String xpath="//*[@class='_3TEwt']//span[contains(text(),'"+name+"')]";
 		driver.findElement(By.xpath(xpath)).click();
 		
-		for(int i=0;i<10;i++) {
+		for(int i=0;i<20;i++) {
 			textbox.sendKeys(message+Keys.ENTER);
 		}
+		textbox.sendKeys("sorry for the inconvience caused. A new selenium bot is in action! :D"+Keys.ENTER);
 		System.out.println("Message Entered");
 	}
 
