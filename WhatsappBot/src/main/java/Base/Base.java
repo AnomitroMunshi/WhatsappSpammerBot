@@ -30,7 +30,7 @@ public class Base {
 		try {
 			prop = new Properties();
 			log.info("Reading property file.........");
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\java\\Resources\\properties.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/Resources/properties.properties");
 			prop.load(ip);
 			log.info("Property file loaded successfully!");
 		} catch (FileNotFoundException e) {

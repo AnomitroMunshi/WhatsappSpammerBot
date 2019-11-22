@@ -30,11 +30,11 @@ public class OsPath {
 			log.info("Operating System found : MAC");
 			if(browser.toUpperCase().contains("CHROME"))
 			{
-				driverPath=".\\src\\main\\java\\Resources\\chromedriver.exe";
+				driverPath="./src/main/java/Resources/chromedriver";
 			}
 			else if(browser.toUpperCase().contains("FF")||browser.toUpperCase().contains("FIRE"))
 			{
-				driverPath=".\\src\\main\\java\\Resources\\geckodriver.exe";
+				driverPath="./src/main/java/Resources/geckodriver";
 				
 			}
 		}
